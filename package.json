@@ -1,0 +1,46 @@
+{
+  "name": "sfz-gen",
+  "version": "1.0.0",
+  "description": "中国身份证号生成器，支持省市区县乡镇街道级别的地址生成，可生成完整个人信息",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "example": "node examples/generate-by-area-age.js",
+    "performance": "node examples/performance-test.js"
+  },
+  "keywords": [
+    "身份证",
+    "测试数据",
+    "中国",
+    "自动化测试",
+    "乡镇街道",
+    "个人信息",
+    "地址生成"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/sfz-gen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/sfz-gen/issues"
+  },
+  "homepage": "https://github.com/yourusername/sfz-gen#readme",
+  "dependencies": {
+    "id-validator": "^1.3.0",
+    "mockjs": "^1.1.0",
+    "province-city-china": "^8.5.8"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}

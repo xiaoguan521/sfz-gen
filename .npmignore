@@ -1,0 +1,40 @@
+# 测试文件
+test/
+examples/
+coverage/
+*.test.js
+jest.config.js
+
+# Git相关
+.git/
+.gitignore
+
+# 编辑器和IDE文件
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# 构建和配置文件
+.travis.yml
+.github/
+.eslintrc
+.eslintignore
+.prettierrc
+tsconfig.json
+webpack.config.js
+rollup.config.js
+babel.config.js
+
+# 文档和示例
+docs/
+images/
+*.md
+!README.md
+
+# 备份文件
+*.backup
+*.bak
+*copy* 
