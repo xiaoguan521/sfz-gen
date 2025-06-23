@@ -2,6 +2,10 @@
 
 一个强大的中国身份证号码和个人信息生成工具，可以生成符合规则的身份证号码、姓名、性别、年龄、手机号、邮箱、地址等信息。
 
+[![NPM Version](https://img.shields.io/npm/v/sfz-gen.svg)](https://www.npmjs.com/package/sfz-gen)
+[![License](https://img.shields.io/npm/l/sfz-gen.svg)](https://github.com/xiaoguan521/sfz-gen/blob/main/LICENSE)
+[![Downloads](https://img.shields.io/npm/dm/sfz-gen.svg)](https://www.npmjs.com/package/sfz-gen)
+
 ## 特性
 
 - 生成符合校验规则的18位中国居民身份证号码
@@ -69,6 +73,10 @@ generator.generateBatch(1000, {}, (progress) => {
 // 根据地区名称和年龄生成个人信息
 const beijingPerson = generator.generatePersonInfoByAreaAndAge('北京', 30);
 const shanghaiPerson = generator.generatePersonInfoByAreaAndAge('上海', 25);
+
+// 根据地区名称和年龄生成身份证号
+const beijingId = generator.generateIdByAreaAndAge('北京', 30);
+const shanghaiId = generator.generateIdByAreaAndAge('上海', 25);
 ```
 
 ## 高级用法
@@ -138,6 +146,13 @@ generator.registerPlugin('addressGenerator', (areaCode, areaName) => {
 generator.removePlugin('nameGenerator');
 ```
 
+## 示例
+
+查看 [examples](https://github.com/xiaoguan521/sfz-gen/tree/main/examples) 目录获取更多示例：
+
+- [简单使用示例](https://github.com/xiaoguan521/sfz-gen/blob/main/examples/simple-usage.js)
+- [按地区和年龄生成](https://github.com/xiaoguan521/sfz-gen/blob/main/examples/generate-by-area-age.js)
+
 ## 性能
 
 - 初始化时间: ~20ms
@@ -150,8 +165,18 @@ generator.removePlugin('nameGenerator');
 
 ```bash
 # 运行单元测试
-npx jest
+npm test
 ```
+
+## 贡献指南
+
+欢迎提交问题和贡献代码！
+
+1. Fork 项目
+2. 创建您的特性分支 (`git checkout -b feature/amazing-feature`)
+3. 提交您的更改 (`git commit -m 'Add some amazing feature'`)
+4. 推送到分支 (`git push origin feature/amazing-feature`)
+5. 打开一个 Pull Request
 
 ## 许可证
 

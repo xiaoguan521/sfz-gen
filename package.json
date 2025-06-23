@@ -17,16 +17,16 @@
     "个人信息",
     "地址生成"
   ],
-  "author": "Your Name",
+  "author": "xiaoguan521",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/sfz-gen.git"
+    "url": "git+https://github.com/xiaoguan521/sfz-gen.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/sfz-gen/issues"
+    "url": "https://github.com/xiaoguan521/sfz-gen/issues"
   },
-  "homepage": "https://github.com/yourusername/sfz-gen#readme",
+  "homepage": "https://github.com/xiaoguan521/sfz-gen#readme",
   "dependencies": {
     "id-validator": "^1.3.0",
     "mockjs": "^1.1.0",
